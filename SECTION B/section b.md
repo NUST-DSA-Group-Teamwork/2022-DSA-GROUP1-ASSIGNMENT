@@ -1,4 +1,4 @@
-This folder has 3 files. The Main class java file, the doublyNode java file and the doublyLinkedList java file to implement the design algorithm.
+This folder has 3 files. The Main class java file, the doublyNode java file and the doublyLinkedList java file to implement the designed algorithm.
 
 The doublyNode file establishes 3 variables for the 3 parts of a node in a doubly linked list.
 the variable song is for the data of a node, the next variable carries the address of the next node and the prev variable carries the address of the previous node.
