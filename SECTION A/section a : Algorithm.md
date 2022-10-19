@@ -55,7 +55,7 @@ doublyLinkedList CLASS
   
        createDoublyLL(nodeValue)
        
-       RETURN value
+       RETURN
        
   ELSE IF location is equal to 0 THEN # inserting at the beginning
   
@@ -153,8 +153,29 @@ doublyLinkedList CLASS
      
      PRINT "Song does not exist!"
      
-    RETURN false;
+     RETURN false;
     
   END FUNCTION
+  
+  # function to remove a song from the playlist
+  function (declare integer locationOfNode)
+    
+    IF head is equal to null THEN
+      
+      PRINT "Playlist does not exist!"
+      
+      RETURN
+      
+    ELSE IF locationOfNode is equal to 0 THEN
+      
+      IF size is equal to 1 THEN
+        
+        head := null
+        
+        tail := null
+        
+        DECREMENT size
+        
+        RETURN
 
 END CLASS
