@@ -177,5 +177,69 @@ doublyLinkedList CLASS
         DECREMENT size
         
         RETURN
+        
+      ELSE
+        
+        doublyNode tempNode := head
+        
+        PRINT "Song " + tempNode.song + " removed."
+        
+        head := head.next
+        
+        head.prev := null
+        
+        DECREMENT size
+        
+      END IF
+      
+    ELSE IF locationOfNode is greater than or equal to size THEN
+      
+      doublyNode tempNode := tail.prev
+      
+      PRINT "Song " + tempNode.song + " removed."
+      
+      IF size is equal to 1 THEN
+        
+        head := null
+        
+        tail := null
+        
+        DECREMENT size
+        
+        RETURN
+        
+      ELSE
+      
+        PRINT "Song " + tempNode.song + " removed."
+        
+        tempNode.next := null
+        
+        tail :=  tempNode
+       
+        DECREMENT size
+        
+      END IF
+      
+    ELSE
+      
+      doublyNode tempNode := head
+      
+      FOR integer := 0 to locationOfNode minus 1 DO
+        
+        tempNode := tempNode.next
+        
+      END FOR
+      
+      PRINT "Song " + tempNode.song + " removed."
+      
+      tempNode.next := tempNode.next.next
+      
+      tempNode.next.prev := tempNode
+      
+      DECREMENT size
+      
+    END IF
+    
+  END FUNCTION
 
 END CLASS
