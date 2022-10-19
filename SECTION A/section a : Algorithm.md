@@ -57,7 +57,7 @@ doublyLinkedList CLASS
        
        RETURN
        
-  ELSE IF location is equal to 0 THEN # inserting at the beginning
+  ELSE IF location is equal to 0 THEN
   
         newNode.next := head
         
@@ -67,7 +67,7 @@ doublyLinkedList CLASS
         
         head := newNode
         
-    ELSE IF locationOfNode is greater than or equal to size THEN ### inserting at the end
+    ELSE IF locationOfNode is greater than or equal to size THEN
     
         newNode.next := null
         
@@ -77,7 +77,7 @@ doublyLinkedList CLASS
         
         tail := newNode
         
-    ELSE ### inserting at a specified location
+    ELSE
     
         doublyNode tempNode := head
         
@@ -101,14 +101,14 @@ doublyLinkedList CLASS
         
     END IF
     
-    INCREMENT size ### increase size every time a song is added
+    INCREMENT size
     
   END FUNCTION
   
   # function to playing songs
   function playSong ()
     
-    IF head does not equal null THEN ### we can traverse through the playlist
+    IF head does not equal null THEN
     
         doublyNode tempNode := head
         
@@ -116,7 +116,7 @@ doublyLinkedList CLASS
         
             PLAY tempNode.song
 
-            tempNode := tempNode.next ### goes to next song
+            tempNode := tempNode.next
             
         END FOR
         
@@ -131,7 +131,7 @@ doublyLinkedList CLASS
   # function to search for a song
   function searchSong (declare string nodeValue)
     
-    IF head does not equal null THEN ### playlist is not empty so we can look for a song
+    IF head does not equal null THEN
     
       doublyNode tempNode := head
 
@@ -145,7 +145,7 @@ doublyLinkedList CLASS
               
           END IF
           
-          tempNode := tempNode.next # if song is not found, go to next node
+          tempNode := tempNode.next
           
       END FOR
       
@@ -241,5 +241,13 @@ doublyLinkedList CLASS
     END IF
     
   END FUNCTION
+
+END CLASS
+
+# The Main Class will call upon the functions
+
+Main CLASS
+
+  
 
 END CLASS
