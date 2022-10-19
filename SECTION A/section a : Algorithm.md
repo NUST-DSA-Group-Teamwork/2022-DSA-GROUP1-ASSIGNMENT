@@ -248,6 +248,22 @@ END CLASS
 
 Main CLASS
 
+  doublyLinkedList playlistDLL = new doublyLinkedList();
   
+    playlistDLL.createDoublyLL(song file);
+    
+    GET song files
+    
+    ADD song files into songArray
+    
+    FOR integer i := 0 to songArray.length DO
+        playlistDLL.insertSong(songArray[i], i)
+    END FOR
+
+    playlistDLL.playSong()
+
+    playlistDLL.searchSong("Macklemore - Thrift Shop")
+
+    playlistDLL.removeSong(98)
 
 END CLASS
