@@ -1,4 +1,4 @@
-This DSA GROUP 1  repository has 2 folders called SECTION A AND SECTION B.
+Our repository has 2 folders called SECTION A AND SECTION B.
 
 Folder SECTION A contains the algorithm for the group project's SECTION A question.
 
