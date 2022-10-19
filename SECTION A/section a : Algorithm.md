@@ -153,9 +153,7 @@ doublyLinkedList CLASS
      
      PRINT "Song does not exist!"
      
-     return false;
-     
-  END FUNCTION
+    RETURN false;
     
   END FUNCTION
 
