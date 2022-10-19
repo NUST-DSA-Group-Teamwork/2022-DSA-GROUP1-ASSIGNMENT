@@ -57,7 +57,7 @@ doublyLinkedList CLASS
        
        RETURN value
        
-  ELSE IF location is equal to 0 THEN ### inserting at the beginning
+  ELSE IF location is equal to 0 THEN # inserting at the beginning
   
         newNode.next := head
         
@@ -145,11 +145,15 @@ doublyLinkedList CLASS
               
           END IF
           
-          tempNode := tempNode.next ### if song is not found, go to next node
+          tempNode := tempNode.next # if song is not found, go to next node
           
       END FOR
       
      END IF
+     
+     PRINT "Song does not exist!"
+     
+     return false;
     
   END FUNCTION
 
