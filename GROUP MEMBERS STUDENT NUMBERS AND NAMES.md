@@ -1,4 +1,4 @@
-Peter K.N. Kapembe - 222029501 (Group Leader)
+Peter K.N. Kapembe - 222029501 (Team Leader)
 
 Kalorina Shekupe Kalute - 222006854
 
